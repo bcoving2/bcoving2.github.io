@@ -8,7 +8,28 @@
     <title>Benjamin Covington's Portfolio</title>
 </head>
 <body>
-    <script src="./script.js" type="text/javascript" defer></script>
-    Hello World!
+    <script src="./script.js" type="module"></script>
+    <nav-bar>
+        <nav-item data-link="About Me"></nav-item>
+        <nav-item data-link="Monstralia"></nav-item>
+        <nav-item data-link="Roguelike One"></nav-item>
+        <nav-item data-link="Contact Me"></nav-item>
+    </nav-bar>
+    <content-card>
+        <content-heading slot="heading" id="About Me"></content-heading>
+        <lorem-ipsum slot="description" data-num=3></lorem-ipsum>
+    </content-card>
+    <content-card>
+        <content-heading slot="heading" id="Monstralia"></content-heading>
+        <lorem-ipsum slot="description" data-num=3></lorem-ipsum>
+    </content-card>
+    <content-card>
+        <content-heading slot="heading" id="Roguelike One"></content-heading>
+        <lorem-ipsum slot="description" data-num=3></lorem-ipsum>
+    </content-card>
+    <content-card>
+        <content-heading slot="heading" id="Contact Me"></content-heading>
+        <lorem-ipsum slot="description" data-num=3></lorem-ipsum>
+    </content-card>
 </body>
 </html>
